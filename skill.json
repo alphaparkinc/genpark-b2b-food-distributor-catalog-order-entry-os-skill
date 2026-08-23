@@ -1,0 +1,38 @@
+{
+  "name": "genpark-b2b-food-distributor-catalog-order-entry-os-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - B2B food supply chain digital operating system converting voice/text restaurant orders into structured ERP distributor entries.",
+  "author": "genpark",
+  "category": "supply-chain",
+  "tags": [
+    "food-distributor",
+    "b2b-ordering",
+    "restaurant-supply",
+    "erp-sync",
+    "pepper"
+  ],
+  "inputs": {
+    "restaurant_id": {
+      "type": "string"
+    },
+    "voice_or_text_order": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "digital_order_id": {
+      "type": "string"
+    },
+    "parsed_line_items": {
+      "type": "array"
+    },
+    "total_order_usd": {
+      "type": "number"
+    },
+    "automated_erp_sync_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
